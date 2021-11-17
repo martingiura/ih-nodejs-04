@@ -9,7 +9,9 @@ require("dotenv").config()
 
 
 // 3. RUTAS
-
+app.get("/", (req, res) => {
+	res.render("index")
+})
 
 // 4. SERVIDOR
 app.listen(process.env.PORT, () => {
